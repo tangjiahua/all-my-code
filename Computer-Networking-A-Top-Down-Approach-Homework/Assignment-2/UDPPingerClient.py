@@ -17,7 +17,7 @@ for i in range(1, 10):
         else:
             print 'ping message wrong'
 
-            
+
     except timeout:
         print 'timeout'
 
