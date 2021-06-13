@@ -16,6 +16,8 @@ for i in range(1, 10):
             print ('Ping ' + str(i) + ' ' + str(rtt))
         else:
             print 'ping message wrong'
+
+            
     except timeout:
         print 'timeout'
 
