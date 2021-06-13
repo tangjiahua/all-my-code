@@ -3,7 +3,7 @@ from socket import *
 serverSocket = socket(AF_INET, SOCK_STREAM)
 #Prepare a sever socket
 #Fill in start
-serverSocket.bind(('localhost',6999))
+serverSocket.bind(('',6999))
 serverSocket.listen(5)
 
 #Fill in end

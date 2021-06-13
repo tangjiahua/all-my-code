@@ -16,7 +16,7 @@ if recv[:3] != '220':
     print '220 reply not received from server.'
 
 # Send HELO command and print server response.
-heloCommand = 'HELO qq.com\r\n'
+heloCommand = 'HELO smtp.qq.com\r\n'
 clientSocket.send(heloCommand)
 recv1 = clientSocket.recv(1024)
 print recv1
@@ -25,7 +25,7 @@ if recv1[:3] != '250':
 
 # Send MAIL FROM command and print server response.
 # Fill in start
-mailfromCommand = 'MAIL FROM: <ponyma@smtp.qq.com>\r\n'
+mailfromCommand = 'MAIL FROM: <ponyma@qq.com>\r\n'
 clientSocket.send(mailfromCommand)
 recv2 = clientSocket.recv(1024)
 print recv2
